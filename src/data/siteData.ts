@@ -116,17 +116,6 @@ export const siteData = {
       image: "https://i.ibb.co/DHYPpwrG/Save-Clip-App-684991781-17875593570598704-8934335603869686297-n.webp"
     },
     {
-      id: "brow-henna",
-      category: "brows",
-      categoryName: { pt: "Sobrancelhas", en: "Brows" },
-      name: { pt: "Design de sobrancelhas & Henna", en: "Brow Design & Henna" },
-      description: {
-        pt: "Pigmentação que preenche falhas e define o desenho, valorizando as sobrancelhas. A duração varia de pessoa para pessoa.",
-        en: "Natural mineral tinting that fills gaps, defines the arch and enhances depth. Retention varies individually."
-      },
-      image: "https://i.ibb.co/wZrg8Mm0/858475338-17906628309598704-4404498835848038476-n.webp"
-    },
-    {
       id: "brow-lamination",
       category: "brows",
       categoryName: { pt: "Sobrancelhas", en: "Brows" },
@@ -183,9 +172,9 @@ export const siteData = {
     },
     {
       src: "https://i.ibb.co/wZrg8Mm0/858475338-17906628309598704-4404498835848038476-n.webp",
-      altPt: "Henna para sobrancelhas com preenchimento sutil e definição",
-      altEn: "Eyebrow henna tinting with soft shadow effect",
-      title: "Brow Henna"
+      altPt: "Design de sobrancelhas com acabamento alinhado e natural",
+      altEn: "Precision eyebrow design with clean natural finish",
+      title: "Brow Design"
     },
     {
       src: "https://i.ibb.co/hFQhHGkj/791096354-17898508737598704-2655340463281553804-n.webp",
@@ -340,7 +329,7 @@ export const siteData = {
     {
       id: "6",
       name: "Mariana S.",
-      service: "Henna + Design",
+      service: "Design de sobrancelhas",
       text: "Ambiente lindo e muito carinho. Já marquei a próxima!",
       rating: 5
     }
@@ -497,16 +486,16 @@ export const siteData = {
     {
       id: "faq-7",
       question: {
-        pt: "O que é a henna de sobrancelhas?",
-        en: "What is Brow Henna?"
+        pt: "Como funciona o Design de sobrancelhas?",
+        en: "How does Brow Design work?"
       },
       shortAnswer: {
-        pt: "Uma pigmentação vegetal que sombreia a pele e tinge os fios, definindo o contorno.",
-        en: "A plant-based pigment that casts a soft shadow on the skin and tints brow hairs."
+        pt: "Mapeamento anatômico personalizado que realça a simetria natural do seu rosto.",
+        en: "Personalized anatomical mapping that enhances your facial symmetry."
       },
       fullAnswer: {
-        pt: "A henna preenche falhas e realça a geometria das sobrancelhas sem a invasividade de procedimentos permanentes. A duração varia de pessoa para pessoa dependendo do tipo de pele e rotina de skincare.",
-        en: "Henna camouflages sparse areas and accentuates natural brow symmetry. Skin tint longevity varies by skin type (oily vs dry) and daily cleansing routines."
+        pt: "O design de sobrancelhas analisa os traços faciais e o alinhamento dos fios naturais para desenhar um formato limpo, harmônico e sob medida para o seu olhar.",
+        en: "Brow design analyzes your facial architecture and natural hair alignment to sculpt a clean, harmonious, and flattering shape bespoke to your gaze."
       }
     },
     {

@@ -103,7 +103,6 @@ export const translations = {
         "Volume Brasileiro",
         "Siren Effect",
         "Design de sobrancelhas",
-        "Design de sobrancelhas & Henna",
         "Brow Lamination",
         "Hidralips",
         "Ainda não sei"
@@ -253,7 +252,6 @@ export const translations = {
         "Brazilian Volume",
         "Siren Effect",
         "Brow Design",
-        "Brow Design & Henna",
         "Brow Lamination",
         "Hidralips",
         "Still not sure"
