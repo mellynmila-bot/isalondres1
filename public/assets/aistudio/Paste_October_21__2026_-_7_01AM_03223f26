@@ -1,0 +1,340 @@
+PRD – Site One Page Institucional: Isadora Lash & Brows (@isadorab.lash)
+Cliente: Isadora – Lash & Brow Artist • Lash Extensions & Brows • London Assinatura: Elevating your everyday beauty. Tipo: Site one page institucional, sofisticado, elegante e otimizado para Google e IAs Idiomas: Português do Brasil (padrão) + opção de ler em inglês no cabeçalho Agendamento: WhatsApp Destino: Google AI Studio (gerar o site completo a partir deste documento)
+1. Instrução principal para a IA
+Crie um site one page institucional para Isadora, Lash & Brow Artist em Londres 🇬🇧, especializada em extensão de cílios (Fox Eyes, Volume 5D, Volume Brasileiro, Siren Effect), sobrancelhas (design, henna e brow lamination) e Hidralips. O site deve transmitir sofisticação, luxo discreto, olhar marcante e elegância. Use React + Tailwind CSS + Framer Motion (ou HTML/CSS/JS puro com IntersectionObserver), 100% responsivo (mobile-first, o público vem do Instagram). Entregue o site completo, com todas as seções abaixo na ordem indicada.
+Regras de ouro
+1. Toda seção tem título + subtítulo de impacto (copy que cria conexão) e um botão de agendar.
+2. Todos os botões de agendar levam ao WhatsApp dela (seção 5).
+3. Todos os links de imagem devem ser usados exatamente como estão neste PRD.
+4. Site em português com opção de inglês no cabeçalho.
+5. SEO interno completo, pensado para Google e para IAs recomendarem (seção 8).
+6. Linguagem responsável: sem promessas absolutas (“dura X semanas garantido”). Usar “os resultados variam” e “após avaliação”. Teste de alergia e avaliação ocular são parte do processo.
+7. Serviços sem preços (não informados): chip Valores sob consulta.
+2. Identidade visual
+Tema: olhar, cílios e brilho. Ornamentos em traço fino dourado: curva de cílio, estrela de 4 pontas (sparkle) e olho estilizado. Monograma “I” dourado.
+Paleta (branco, dourado, preto, intercalando)
+• Branco quente #FBF9F5 e marfim claro #F1ECE2
+• Preto profundo #0E0E0F e grafite #1C1C1E
+• Dourado #C9A24D (principal, botões e detalhes), dourado claro #E9D597 (brilho), dourado antigo #8F7030
+• Texto sobre branco: #141414; sobre preto: #F5F1E8; texto secundário #6B6B6B / #B9B3A5
+Alternância de fundos
+#
+Seção
+Fundo
+1
+Hero
+Branco
+2
+Serviços
+Preto
+3
+Galeria
+Branco
+4
+Sobre + Instagram
+Preto
+5
+Feedbacks
+Branco
+6
+Studio
+Preto
+7
+Agendamento
+Branco
+8
+FAQ
+Preto
+9
+Rodapé
+Marfim claro (discreto), com linha dourada
+Estilo
+• Foto do hero e do Sobre em moldura oval vertical (elipse) com borda dourada fina dupla (linha principal + linha deslocada), brilho suave e sparkles. As demais fotos com moldura dourada fina de cantos suaves.
+• Botões e detalhes dourados: primário dourado preenchido (texto preto), secundário com contorno dourado. Brilho deslizante no hover.
+• Cards com cantos suaves (6px), borda dourada fina; em fundo preto, fundo grafite com borda dourada.
+• Divisores: linha dourada fina com curva de cílio ou sparkle central.
+• Brilho sutil: feixe de luz dourado lento, estrelas discretas nas seções pretas.
+• Muito espaço em branco, ritmo editorial de revista de beleza.
+Tipografia (Google Fonts)
+• Títulos: Marcellus (palavras-chave em dourado)
+• Corpo e botões: Raleway (rótulos em maiúsculas pequenas, espaçadas)
+• Assinatura (nome sob a frase): Allison
+• Logo (texto): “ISADORA” em serifada espaçada com curva de cílio dourada + “LASH & BROWS · LONDON” pequeno.
+3. Animações
+• Cada seção entra com fade-in + slide-up (uma vez), conteúdo interno em cascata.
+• Linhas e molduras douradas que se desenham ao entrar.
+• Hero: título linha a linha, foto com leve parallax e brilho pulsando suavemente.
+• Navbar transparente no topo, vira branca (ou preta) com borda dourada ao rolar.
+• Hover: zoom suave nas fotos, elevação nos cards.
+• prefers-reduced-motion respeitado; scroll suave.
+4. Idiomas (PT-BR + EN)
+• Padrão: português (BR). No cabeçalho, seletor PT | EN visível, em pílula com borda dourada (“Read in English” / “Ler em português”), também no menu mobile.
+• Troca instantânea de todo o conteúdo sem recarregar, via translations.pt / translations.en, escolha em localStorage (com try/catch), <html lang> dinâmico (pt-BR / en-GB).
+• Textos PT deste PRD são a versão final. Em EN, usar as versões dadas e traduzir fielmente o restante.
+• Texto legal de registro, contato e modais (Privacy Policy e Terms of Use) sempre em inglês.
+5. Dados e links (usar exatamente)
+• WhatsApp (todos os botões de agendar), link original com mensagem pré-pronta: https://api.whatsapp.com/send?phone=447387625779&text=Hello%20Isa%2C%20I%20would%20like%20to%20book%20an%20appointment.%20Could%20you%20please%20share%20your%20available%20times%3F%20%E2%9C%A8
+    ◦ Guardar whatsappPhone = 447387625779 e a mensagem padrão em siteData. Nos botões gerais usar o link acima; no formulário (6.7) montar https://api.whatsapp.com/send?phone=447387625779&text= + mensagem completa (encodeURIComponent).
+    ◦ Mensagem padrão em PT: Olá, Isa! Gostaria de agendar um horário. Pode me informar os horários disponíveis? ✨ (usar a versão EN original quando o site estiver em inglês).
+• Instagram: https://www.instagram.com/isadorab.lash/
+• Reel (Instagram): https://www.instagram.com/reel/DdhCIUnIh38/
+• Localização: Londres, Reino Unido. Endereço exato só após o agendamento; nunca exibir no site.
+Tudo em um único objeto siteData.
+6. Seções (na ordem)
+Navbar (fixa)
+• Logo textual com curva de cílio dourada.
+• Links: Serviços · Galeria · Sobre · Avaliações · Studio · FAQ (EN: Services · Gallery · About · Reviews · Studio · FAQ)
+• Seletor PT | EN e botão dourado Agendar (WhatsApp).
+• Mobile: hambúrguer com painel elegante.
+6.1 Hero
+Layout: duas colunas; texto e cards à esquerda; foto dela à direita em moldura oval vertical com borda dourada dupla, brilho e sparkles. Foto: https://i.ibb.co/tMPy6fG7/838645612-17904498174598704-3108184795695297259-n-jpg.webp
+• Eyebrow: LASH & BROW ARTIST • LONDON
+• Título: Um olhar que eleva a sua beleza de todos os dias (EN: A look that elevates your everyday beauty)
+• Subtítulo: Extensão de cílios, sobrancelhas e Hidralips em Londres, com técnica, delicadeza e acabamento sofisticado para o seu olhar. (EN: Lash extensions, brows and Hydralips in London, with technique, delicacy and a sophisticated finish for your eyes.)
+• Botões: Agendar meu horário (WhatsApp) · Ver serviços (#servicos)
+Cards (cantos suaves, borda dourada, ícone fino):
+• 📍 Londres, Reino Unido
+• 👁️ Mapping personalizado para o formato do seu olhar
+• ✨ Fox Eyes · Volume 5D · Brasileiro · Siren
+6.2 Serviços (nome, descrição e foto)
+• Título: Cada olhar tem um desenho (EN: Every look has its own design)
+• Subtítulo: Escolha o efeito que combina com o seu rosto e com a sua rotina. (EN: Choose the effect that suits your face and your routine.)
+Layout: três grupos com subtítulo dourado: Cílios · Sobrancelhas · Boca. Cada serviço em card (grid 2 colunas desktop, 1 mobile) com foto (moldura dourada), nome, descrição, chip Valores sob consulta e botão Agendar (WhatsApp).
+⚠️ Não foram indicadas fotos por serviço: reaproveitar as 8 da galeria na ordem abaixo (guardar em siteData.services[i].image para troca fácil) e confirmar com a Isadora qual representa cada serviço. Os nomes foram corrigidos de “fox eys”, “siren efect” e “desging”.
+#
+Grupo
+Serviço (PT / EN)
+Descrição
+Foto
+1
+Cílios
+Fox Eyes
+Efeito alongado e levantado nos cantos externos, que desenha um olhar sofisticado e marcante, com mapping personalizado.
+https://i.ibb.co/hFQhHGkj/791096354-17898508737598704-2655340463281553804-n.webp
+2
+Cílios
+Volume 5D
+Leques de fios ultraleves para um olhar preenchido, volumoso e elegante, sem peso nos cílios naturais.
+https://i.ibb.co/N2VWgyfX/820568391-17902124109598704-6990642647768489921-n.webp
+3
+Cílios
+Volume Brasileiro
+Técnica apreciada pelo acabamento macio, volumoso e natural, com sensação de densidade e leveza.
+https://i.ibb.co/WWSBnnSn/830281678-17903207556598704-5802454966537184775-n.webp
+4
+Cílios
+Siren Effect
+Olhar sedutor e marcante, com alongamento nos cantos externos e acabamento texturizado e glamoroso.
+https://i.ibb.co/KcGq4tDk/848774192-17906007111598704-1177502941476458059-n.webp
+5
+Sobrancelhas
+Design de sobrancelhas / Brow design
+Mapeamento do formato que valoriza o seu rosto, com fios alinhados e acabamento limpo e natural.
+https://i.ibb.co/DHYPpwrG/Save-Clip-App-684991781-17875593570598704-8934335603869686297-n.webp
+6
+Sobrancelhas
+Henna / Brow henna
+Pigmentação que preenche falhas e define o desenho, valorizando as sobrancelhas. A duração varia de pessoa para pessoa.
+https://i.ibb.co/wZrg8Mm0/858475338-17906628309598704-4404498835848038476-n.webp
+7
+Sobrancelhas
+Brow Lamination
+Alinha e disciplina os fios, para sobrancelhas mais preenchidas, penteadas e definidas, com efeito natural.
+https://i.ibb.co/6Rd5SZTG/811373901-17900738667598704-5164159540656406704-n.webp
+8
+Boca
+Hidralips
+Tratamento voltado à hidratação e ao aspecto saudável dos lábios, para uma boca mais suave, uniforme e cuidada.
+https://i.ibb.co/mC51wtQT/780482126-17896615305598704-8454376443231367276-n.webp
+⚠️ O “Hidralips” não tinha descrição: a acima é genérica. A Isadora deve confirmar o que o procedimento inclui antes de publicar (e evitar qualquer promessa médica).
+Nota sob os cards (pequena): Avaliação e teste de alergia (quando indicado) fazem parte do processo. Os resultados e a duração variam de pessoa para pessoa. (EN: translate)
+Botão da seção: Agendar meu horário.
+6.3 Galeria
+• Título: Olhares que falam por si (EN: Looks that speak for themselves)
+• Subtítulo: Detalhes, desenhos e acabamentos feitos fio a fio. (EN: Details, designs and finishes made lash by lash.)
+8 fotos em grid (4×2 desktop largo, 2 colunas mobile), moldura dourada, hover com zoom. Lightbox ao clicar: tela cheia, setas esquerda/direita, X, contador (“3 / 8”), teclado e swipe.
+Fotos (8):
+1. https://i.ibb.co/hFQhHGkj/791096354-17898508737598704-2655340463281553804-n.webp
+2. https://i.ibb.co/N2VWgyfX/820568391-17902124109598704-6990642647768489921-n.webp
+3. https://i.ibb.co/WWSBnnSn/830281678-17903207556598704-5802454966537184775-n.webp
+4. https://i.ibb.co/KcGq4tDk/848774192-17906007111598704-1177502941476458059-n.webp
+5. https://i.ibb.co/DHYPpwrG/Save-Clip-App-684991781-17875593570598704-8934335603869686297-n.webp
+6. https://i.ibb.co/wZrg8Mm0/858475338-17906628309598704-4404498835848038476-n.webp
+7. https://i.ibb.co/6Rd5SZTG/811373901-17900738667598704-5164159540656406704-n.webp
+8. https://i.ibb.co/mC51wtQT/780482126-17896615305598704-8454376443231367276-n.webp
+Nota pequena: Resultados individuais podem variar. Botão: Quero um olhar assim (WhatsApp).
+6.4 Sobre + Instagram
+Layout (Sobre): duas colunas; foto dela em moldura oval vertical (borda dourada dupla) e, ao lado, título, frase e parágrafos. Foto: https://i.ibb.co/tMPy6fG7/838645612-17904498174598704-3108184795695297259-n-jpg.webp
+• Título: Conheça a Isadora (EN: Meet Isadora)
+• Subtítulo: Por trás de cada olhar, delicadeza, técnica e muito carinho. (EN: Behind every look, delicacy, technique and a lot of care.)
+• Frase (serifada itálica, aspas douradas, assinatura em Allison): “Um olhar bem cuidado muda a forma como você se sente todos os dias.” — Isadora (EN: “A well-cared-for look changes how you feel every single day.”)
+• Parágrafo 1 (emocional): Para a Isadora, beleza é sentir-se bem ao acordar, olhar-se no espelho e reconhecer-se linda sem esforço. Cada cliente chega com um desejo e uma história, e o atendimento é um momento calmo e acolhedor, pensado para realçar o que já é seu e elevar a sua autoestima no dia a dia.
+• Parágrafo 2 (técnico): Lash & Brow Artist em Londres, a Isadora trabalha com mapping personalizado, escolha cuidadosa de curvaturas, comprimentos e técnicas (Fox Eyes, Volume 5D, Volume Brasileiro e Siren Effect), além de design, henna e brow lamination. Cada atendimento segue protocolos de higiene, avaliação do olhar e orientações de cuidados para um resultado leve, bonito e duradouro.
+• Selos animados (sem números inventados): Lash & Brow Artist · Mapping personalizado · Higiene rigorosa · Londres
+⚠️ Não foi informado tempo de experiência, então não foi incluído. A Isadora pode acrescentar “+X anos” depois.
+Botão: Agendar com a Isadora.
+Instagram (sub-bloco no mesmo fundo preto, com divisor de sparkle):
+• Subtítulo: Acompanhe a Isadora no Instagram (EN: Follow Isadora on Instagram) · Transformações, bastidores e dicas de cuidado com os cílios, todos os dias. (EN: Transformations, behind the scenes and lash-care tips, every day.)
+• Avatar com anel dourado, @isadorab.lash, botão Seguir no Instagram (https://www.instagram.com/isadorab.lash/, nova aba).
+• Reel integrado, reproduzível no próprio site: https://www.instagram.com/reel/DdhCIUnIh38/ via embed oficial (iframe https://www.instagram.com/reel/DdhCIUnIh38/embed), centralizado, moldura dourada, largura máx. ~400px. Sem capa, thumbnail ou imagem de pré-visualização personalizada.
+Botões: Seguir @isadorab.lash · Agendar.
+6.5 Feedbacks (6, com 5 estrelas)
+• Título: Quem experimenta, se apaixona (EN: Those who try it, fall in love)
+• Subtítulo: Palavras de quem confiou o seu olhar à Isadora. (EN: Words from those who trusted Isadora with their look.)
+Grid 3×2 (desktop) ou carrossel (mobile), cards com borda dourada, 5 estrelas douradas, aspas decorativas, texto, nome e serviço.
+⚠️ Todos são textos de exemplo. Substituir por avaliações reais (Instagram, WhatsApp), com autorização das clientes.
+#
+Nome
+Serviço
+Depoimento
+1
+Camila R.
+Volume Brasileiro
+“Meus cílios ficaram leves, naturais e lindos. A Isa tem um olhar incrível!”
+2
+Sophie M.
+Fox Eyes
+“Exactly the lifted look I wanted. Very gentle and professional.”
+3
+Fernanda L.
+Siren Effect
+“Amei o efeito, super elegante. Atendimento cuidadoso do início ao fim.”
+4
+Juliana P.
+Brow Lamination
+“Minhas sobrancelhas ficaram penteadas e definidas, do jeito que eu queria.”
+5
+Emma T.
+Volume 5D
+“A lovely, relaxing experience and the lashes look beautiful.”
+6
+Mariana S.
+Henna + Design
+“Ambiente lindo e muito carinho. Já marquei a próxima!”
+Botão: Quero viver essa experiência.
+6.6 Studio e localização
+• Título: Um cantinho pensado para o seu momento (EN: A little corner designed for your moment)
+• Subtítulo: Higiene, conforto e privacidade, para você relaxar enquanto cuidamos do seu olhar. (EN: Hygiene, comfort and privacy, so you can relax while we take care of your look.)
+• Carrossel infinito de fotos do espaço (loop contínuo, autoplay lento, pausa no hover, setas laterais), moldura dourada. Ao clicar, abre em tela cheia (lightbox) com seta para passar, X, teclado e swipe. Fotos (8):
+    1. https://i.ibb.co/wrwZCD1X/673890271-17874381984598704-8807297658953128957-n.webp
+    2. https://i.ibb.co/G3sVdPy5/Save-Clip-App-820374034-17902125621598704-7300129319855757438-n.webp
+    3. https://i.ibb.co/tTWy0pxn/Save-Clip-App-793720304-17898939780598704-3893845646791036195-n.webp
+    4. https://i.ibb.co/rGj8pWsQ/Save-Clip-App-756832932-17891898474598704-4505500773272372115-n.webp
+    5. https://i.ibb.co/8L4DBW2V/Save-Clip-App-683759894-17875188723598704-4555398987495274213-n.webp
+    6. https://i.ibb.co/Ng6KVbt2/Save-Clip-App-688433411-17876066247598704-604616501807043427-n.webp
+    7. https://i.ibb.co/FjJfxBg/654099975-17866628988598704-78597957669922289-n.webp
+    8. https://i.ibb.co/gLSVhXZH/661710022-17870969049598704-8305624407785305538-n.webp
+• Cards (cantos suaves, borda dourada, ícone fino), grid 3×2: Higiene (materiais esterilizados e protocolos rigorosos) · Conforto (maca confortável e ambiente calmo) · Privacidade (atendimento reservado, um cliente por vez) · Produtos de qualidade (adesivos e fios selecionados) · Atenção exclusiva (tempo e calma em cada detalhe) · Boa localização (Londres, de fácil acesso; confirmar transporte).
+• Mapa: <iframe> do Google Maps (https://www.google.com/maps?q=London,+United+Kingdom&z=11&output=embed), largura total, moldura dourada, loading="lazy", altura 380–450px. Sem pin de endereço.
+• Aviso destacado (card dourado, ícone de cadeado): Por segurança e privacidade, a localização exata do studio é enviada somente após a confirmação do agendamento. (EN: translate)
+Botão: Agendar minha visita.
+6.7 Agendamento + educação
+• Título: Seu próximo olhar começa com uma mensagem (EN: Your next look starts with a message)
+• Subtítulo: Escolha o serviço, conte como imagina o resultado e a Isadora responde com os horários disponíveis. (EN: Choose your service, tell us how you imagine the result and Isadora will reply with available times.)
+Layout em 2 colunas (fundo branco, cards marfim com borda dourada, detalhes pretos). Esquerda: cards educativos. Direita: mini formulário.
+Antes de agendar (cards educativos, ícones finos):
+• 📝 Conte o que você imagina: efeito desejado (natural, volumoso, Fox Eyes, Siren).
+• 📸 Foto de referência: se tiver, envie na conversa do WhatsApp.
+• 👁️ Saúde dos olhos: informe alergias (a adesivos, látex, produtos), sensibilidade ocular, gravidez ou tratamentos recentes.
+• 💄 Venha sem maquiagem nos olhos e com os cílios limpos.
+• 🔁 Manutenção: informe se vem de outra profissional, pois a remoção e o tempo podem mudar.
+• ⏰ Pontualidade e, se possível, venha sem acompanhantes, para mais calma e privacidade.
+⚠️ Orientações de exemplo: a Isadora deve confirmar o que orienta (tolerância de atraso, remarcação, sinal, acompanhantes).
+Mini formulário (sem <form>, usar onClick/onChange):
+• Como gostaria de ser chamada(o)? (texto)
+• Serviço (Fox Eyes · Volume 5D · Volume Brasileiro · Siren Effect · Design de sobrancelhas · Henna · Brow Lamination · Hidralips · Ainda não sei)
+• Melhor dia e horário (campo de data + período)
+• É a sua primeira vez com extensão de cílios? (Sim / Não / Venho de outra profissional)
+• Qual efeito imagina? (texto)
+• Alergias ou algo que devemos saber? (opcional)
+Botão Enviar pelo WhatsApp: monta a mensagem, mostra uma pré-visualização em tempo real e abre https://api.whatsapp.com/send?phone=447387625779&text= + mensagem (nova aba), com botão secundário Copiar mensagem.
+Modelo (PT): Olá, Isa! ✨ Gostaria de agendar um horário. Nome: {nome} Serviço: {serviço} Melhor dia e horário: {horário} Primeira vez / vindo de outra profissional: {resposta} Efeito desejado: {efeito} Alergias/observações: {obs} Pode me informar os horários disponíveis? (EN: Hello Isa, I would like to book an appointment. Could you please share your available times? seguido dos dados)
+6.8 FAQ (accordion animado, borda dourada)
+• Título: Perguntas frequentes (EN: Frequently asked questions)
+• Subtítulo: Tudo o que você precisa saber antes de agendar. (EN: Everything you need to know before booking.)
+1. Como faço para agendar? Preencha o mini formulário e envie pelo WhatsApp. A Isadora responde com os horários disponíveis.
+2. Qual a diferença entre Fox Eyes, Volume 5D, Volume Brasileiro e Siren Effect? São desenhos e técnicas diferentes: Fox Eyes alonga e levanta o olhar; Volume 5D preenche com leques leves; Volume Brasileiro dá acabamento macio e volumoso; Siren Effect cria um olhar mais marcante e texturizado.
+3. Como sei qual é o melhor para mim? A Isadora indica o efeito ideal conforme o formato do seu olhar e o resultado que você quer.
+4. Tenho alergia. Posso fazer? Informe antes. A avaliação e, se indicado, um teste de alergia fazem parte do processo.
+5. Quanto tempo duram os cílios? Varia conforme o seu ciclo natural de crescimento e os cuidados. Recomenda-se manutenção periódica, combinada na avaliação.
+6. Posso molhar e usar rímel? A Isadora explica os cuidados no atendimento e envia as orientações.
+7. O que é a henna de sobrancelhas? Uma pigmentação que preenche falhas e define o desenho. A duração varia de pessoa para pessoa.
+8. O que é Brow Lamination? Técnica que alinha e disciplina os fios, para sobrancelhas mais preenchidas, penteadas e definidas.
+9. O que é o Hidralips? Tratamento voltado à hidratação e ao aspecto saudável dos lábios. (Confirmar descrição com a Isadora.)
+10. Quanto custa? Os valores são enviados pelo WhatsApp conforme o serviço escolhido.
+11. Onde fica o studio? Em Londres. A localização exata é enviada após a confirmação do agendamento.
+12. E se eu precisar remarcar ou cancelar? Avise o quanto antes. (Política a confirmar pela Isadora.)
+Botão final: Agendar meu horário.
+6.9 Rodapé (UK, minimalista e discreto)
+Visual: fundo marfim claro, linha dourada fina no topo, tipografia pequena (text-xs/text-sm), cinza suave (muted, legível), centralizado, arejado, ótima leitura no celular e no desktop.
+• Linha 1: logo textual + ícone Instagram (https://www.instagram.com/isadorab.lash/) + botão discreto Agendar.
+• Linha 2 (copyright): © 2026 [Nome do Negócio]. Todos os direitos reservados. (EN: All rights reserved.)
+• Linha 3 (registro legal, em inglês):
+    ◦ Opção A: [Full Name] is a sole trader registered in the United Kingdom.
+    ◦ Opção B: [Company Name Ltd], Company Registration Number: [XXXXXX], Registered Office: [Address]. Deixar as duas em siteData, exibindo só a ativa.
+• Linha 4 (contato obrigatório): Contact: [E-mail]
+• Linha 5 (links que abrem modais na mesma página): Privacy Policy · Terms of Use (separados por ponto dourado, sem sublinhado até o hover).
+6.10 Modais legais (em inglês, janelas flutuantes)
+Modal elegante: fundo branco, borda dourada, botão X, Esc e clique fora fecham, rolagem interna, foco preso (acessível).
+⚠️ Texto-modelo. Deve ser revisado pela profissional (e, de preferência, por um jurídico) antes de publicar.
+Privacy Policy (UK GDPR / Data Protection Act 2018):
+• Controller: [Name/Company], [E-mail].
+• Data we collect: name, phone number, service of interest, availability, messages sent via the booking form and WhatsApp; health-related information you choose to share (allergies, eye sensitivity, pregnancy), which is special-category data; photos only with consent.
+• Why and lawful basis: to respond to enquiries and provide services (contract/pre-contract steps), to keep safe client records (legitimate interests), and explicit consent for health data and before-and-after photos.
+• Sharing: WhatsApp (Meta), Instagram and Google Maps embeds; never sold.
+• Retention: [retention period], then deleted securely.
+• Your rights: access, rectification, erasure, restriction, portability, objection, withdraw consent.
+• Complaints: the Information Commissioner’s Office (ico.org.uk).
+• Cookies: embeds from Instagram and Google Maps may set cookies.
+Terms of Use:
+• Website content is general information; services require an assessment and, where indicated, a patch test.
+• Clients must disclose allergies, eye conditions and relevant health information honestly.
+• Results and retention vary from person to person; aftercare instructions must be followed.
+• Prices confirmed via WhatsApp; booking, cancellation, lateness and deposit policy: [to be confirmed by the artist].
+• Intellectual property of site content; liability limited to the extent permitted by law (nothing excludes liability for death or personal injury caused by negligence); governing law: England and Wales.
+6.11 Aviso de cookies (PECR, recomendado)
+• Banner discreto, borda dourada (PT/EN): Aceitar · Recusar não essenciais.
+• Sem consentimento, não carregar os embeds de terceiros (Instagram e Google Maps): caixa neutra, sem imagem e sem capa, com Aceite os cookies para ver este conteúdo e botão Aceitar e ver. Escolha em localStorage (com try/catch) e link “Cookie settings” no rodapé.
+7. Botão flutuante
+Canto inferior direito, dourado com ícone de WhatsApp e texto Agendar, com brilho suave, visível após o hero.
+8. SEO interno (Google + IAs)
+Técnico
+• <html lang> dinâmico; âncoras #servicos, #galeria, #sobre, #avaliacoes, #studio, #agendamento, #faq.
+• Title PT: “Isadora | Extensão de Cílios e Sobrancelhas em Londres”. Title EN: “Isadora | Lash Extensions & Brows in London”.
+• Meta description PT (~155 car.): “Extensão de cílios (Fox Eyes, Volume 5D, Brasileiro, Siren), sobrancelhas e Hidralips em Londres. Agende o seu horário com a Isadora.” EN equivalente.
+• Um único <h1>, <h2> por seção, HTML semântico, alt descritivo bilíngue, loading="lazy" (exceto hero), width/height, Open Graph e Twitter Card (foto do hero), canonical, hreflang pt-BR / en-GB.
+• Favicon: monograma “I” dourado sobre preto, com curva de cílio; apple-touch-icon 180×180.
+• Arquivos: robots.txt, sitemap.xml e llms.txt (resumo factual para IAs).
+Dados estruturados (JSON-LD)
+• BeautySalon/LocalBusiness: nome, areaServed London, sameAs (Instagram), serviços em hasOfferCatalog (sem preços). Sem endereço.
+• FAQPage com o FAQ. Review apenas com depoimentos reais.
+Para IAs recomendarem (GEO)
+• Bloco discreto “Em resumo / At a glance” (fim da seção Sobre ou rodapé): Isadora é Lash & Brow Artist em Londres, especializada em extensão de cílios (Fox Eyes, Volume 5D, Volume Brasileiro, Siren Effect), design e henna de sobrancelhas, brow lamination e Hidralips. Atendimento com agendamento por WhatsApp.
+• Respostas curtas e diretas no início de cada FAQ (resposta primeiro, detalhe depois).
+• Mesma identidade (nome, localização, contactos) escrita sempre igual no site, Instagram e Google Business Profile.
+• Palavras-chave naturais no copy: lash extensions London, volume lashes London, Brazilian volume lashes, fox eye lashes London, siren lashes, brow lamination London, henna brows London, extensão de cílios Londres, lash artist brasileira em Londres.
+• Recomendação (fora do site): criar/otimizar o Google Business Profile.
+Acessibilidade e performance: contraste adequado, foco visível, teclado, aria-label, lightbox e modais acessíveis, imagens leves, Core Web Vitals saudáveis.
+9. Resumo de CTAs (todos para o WhatsApp)
+Seção
+Botão
+Navbar e flutuante
+Agendar
+Hero
+Agendar meu horário · Ver serviços (#servicos)
+Serviços
+Agendar (por card) · Agendar meu horário
+Galeria
+Quero um olhar assim
+Sobre + Instagram
+Agendar com a Isadora · Seguir @isadorab.lash (Instagram)
+Feedbacks
+Quero viver essa experiência
+Studio
+Agendar minha visita
+Agendamento
+Enviar pelo WhatsApp · Copiar mensagem
+FAQ
+Agendar meu horário
+Rodapé
+Agendar

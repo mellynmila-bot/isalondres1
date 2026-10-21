@@ -1,0 +1,6 @@
+{
+  "name": "Isadora Lash & Brows | London",
+  "description": "Site institucional de Isadora, Lash & Brow Artist em Londres. Extensão de cílios (Fox Eyes, Volume 5D, Volume Brasileiro, Siren), sobrancelhas e Hidralips.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
